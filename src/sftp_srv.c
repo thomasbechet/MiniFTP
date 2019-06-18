@@ -75,7 +75,7 @@ int main(int argc, char* argv[])
     }
 
     signal(SIGCHLD, SIG_IGN); //Ignore defunct childs
-    signal(SIGINT, handler);
+    signal(SIGINT, handler); //Handle deconnection
 
     if(tcp_open_server(argv[1]) != -1)
     {

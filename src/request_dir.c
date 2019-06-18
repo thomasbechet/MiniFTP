@@ -119,7 +119,7 @@ void client_dir(const char* dst, teakey_t key)
             }
             else if(answer.ack == ANSWER_ERROR)
             {
-
+                fprintf(stderr, "Failed to received answer.\n");
             }
         }
     }
